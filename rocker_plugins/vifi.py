@@ -14,11 +14,11 @@ class ViFi(RockerExtension):
         self.name = ViFi.get_name()
 
     def get_snippet(self, cliargs):
-        snippet = pkgutil.get_data('rocker_plugins', 'snippets/{}_snippet.Dockerfile'.format(self.name)).decode('utf-8')
+        snippet = pkgutil.get_data('rocker_plugins', 'snippets/{}.Dockerfile.snippet'.format(self.name)).decode('utf-8')
         return snippet
 
     @staticmethod
     def register_arguments(parser, defaults={}):
-        parser.add_argument('--mp-vifi',
+        parser.add_argument('--vifi',
             action='store_true',
-            help='install vim and fish with apt')
+            help='install vim, fish shell and starship with apt')

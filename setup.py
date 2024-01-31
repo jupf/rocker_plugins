@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='rocker_plugins',
-    version='1.0.0',
+    version='1.1.0',
 
     description='Personal rocker plugins',
 
@@ -18,9 +18,10 @@ setup(
 
     entry_points={
         'rocker.extensions': [
-            'fish = mp_rocker.fish:Fish',
-            'vim = mp_rocker.vim:Vim',
-            'vifi = mp_rocker.vifi:ViFi',
+            'fish = rocker_plugins.fish:Fish',
+            'vim = rocker_plugins.vim:Vim',
+            'vifi = rocker_plugins.vifi:ViFi',
+            'ipc = rocker_plugins.ipc:IPC'
         ]
     },
 )
