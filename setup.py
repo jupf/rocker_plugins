@@ -21,7 +21,8 @@ setup(
             'fish = rocker_plugins.fish:Fish',
             'vim = rocker_plugins.vim:Vim',
             'vifi = rocker_plugins.vifi:ViFi',
-            'ipc = rocker_plugins.ipc:IPC'
+            'ipc = rocker_plugins.ipc:IPC',
+            'nano = rocker_plugins.nano:Nano'
         ]
     },
 )
